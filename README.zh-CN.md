@@ -6,10 +6,6 @@
 
 一套面向大客户（B2B 复杂销售）场景的 agent skill 家族：从一个商机进来到交付后经营，覆盖 **商机评估 → 决策链破译 → 解决方案设计 → 标准引导 → 信任巩固 → 客户经营** 六个阶段，外加一个总控路由（Gateway）负责判题、调度与体检复盘。家族强调"工具表格驱动 + 推断式采集 + 每句结论配大白话"，让销售过程可复盘、可复制。
 
-> **English summary**
->
-> A family of 7 Agent Skills for B2B enterprise / key-account (complex) sales, covering the full pipeline from opportunity qualification to post-delivery account growth: opportunity assessment, decision-chain mapping, solution design, bid-standard shaping, trust consolidation, and account management — plus a gateway skill that routes, orchestrates, and reviews the whole process. Each skill is a self-contained folder (SKILL.md with YAML frontmatter + a reference/ directory), installed by copying into your agent's skills directory. Open source under the MIT License.
-
 ## 家族成员一览（7 个 skill）
 
 | code_name | 环节名 | 一句话定位 |
