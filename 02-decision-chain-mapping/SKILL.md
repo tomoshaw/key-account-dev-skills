@@ -1,6 +1,8 @@
 ---
 name: 02-decision-chain-mapping
 description: |
+ Decision-chain mapping — finds who decides, who supports or opposes, and where to enter.
+ Trigger: power-structure questions, pre-meeting prep for key contacts, or referral routing.
  大客户开发阶段二·决策链破译。回答"这个客户谁说了算、谁支持谁反对、从哪切入、主攻谁"，
  产出五维人物地图与下一步接触策略。触发：①问权力结构——"谁拍板/谁暗中反对/关键人调走怎么办"；
  ②见关键人前准备；③中间人牵线取舍；④组织架构分析、关键人画像；

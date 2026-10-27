@@ -1,6 +1,8 @@
 ---
 name: 00-key-account-dev
 description: |
+ Gateway/router for key-account development. Use when unsure which stage fits, a request spans
+ multiple stages, or for deal prioritization, win/loss review, or account checkups.
  大客户开发方法论总控路由（Gateway）。用于：①说不清该问哪一环节——"这单整体怎么打"；
  ②一条消息跨多个环节；③问整体路径与商机优先级——"几个商机先打哪个"；
  ④丢单复盘与客户体检——"这单输了复盘看看""重点客户过一遍"；

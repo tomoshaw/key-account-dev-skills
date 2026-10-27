@@ -1,6 +1,8 @@
 ---
 name: 06-account-management
 description: |
+ Account management — post-delivery: satisfaction, complaints, repeat purchases, referrals, and
+ key-contact turnover. Trigger: delivery-phase complaints, new demand in existing accounts, or contact changes.
  大客户开发方法论阶段六「客户经营」——项目交付后怎么干：管满意度、促复购与转介绍、应对关键人变动。
  当客户处于交付/上线/实施期且抱怨投诉多，或想从老客户身上开发新需求（复购、二期、转介绍），
  或客户方关键人变动需要维护关系，或要把存量重点客户批量体检时使用。

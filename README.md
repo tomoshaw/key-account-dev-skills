@@ -1,54 +1,56 @@
-# 大客户开发 Skill 家族
+# Key Account Development Skill Family
+
+[English](README.md) | [简体中文](README.zh-CN.md)
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-一套面向大客户（B2B 复杂销售）场景的 agent skill 家族：从一个商机进来到交付后经营，覆盖 **商机评估 → 决策链破译 → 解决方案设计 → 标准引导 → 信任巩固 → 客户经营** 六个阶段，外加一个总控路由（Gateway）负责判题、调度与体检复盘。家族强调"工具表格驱动 + 推断式采集 + 每句结论配大白话"，让销售过程可复盘、可复制。
+A family of agent skills for key-account (B2B complex) sales: from the moment an opportunity comes in through post-delivery account growth, it covers six stages — **商机评估 (Opportunity Assessment) → 决策链破译 (Decision-Chain Mapping) → 解决方案设计 (Solution Design) → 标准引导 (Bid-Standard Shaping) → 信任巩固 (Trust Consolidation) → 客户经营 (Account Management)** — plus a Gateway skill that handles problem diagnosis, orchestration, and review/retrospective. The family emphasizes "tool-and-table driven workflows + inferential data collection + every conclusion explained in plain language", making the sales process reviewable and replicable.
 
 > **English summary**
 >
 > A family of 7 Agent Skills for B2B enterprise / key-account (complex) sales, covering the full pipeline from opportunity qualification to post-delivery account growth: opportunity assessment, decision-chain mapping, solution design, bid-standard shaping, trust consolidation, and account management — plus a gateway skill that routes, orchestrates, and reviews the whole process. Each skill is a self-contained folder (SKILL.md with YAML frontmatter + a reference/ directory), installed by copying into your agent's skills directory. Open source under the MIT License.
 
-## 家族成员一览（7 个 skill）
+## Family Members (7 Skills)
 
-| code_name | 环节名 | 一句话定位 |
+| code_name | Stage | One-line positioning |
 | --- | --- | --- |
-| `00-key-account-dev` | 总控路由（Gateway） | 判题、阶段定位、上下文包组装、体检复盘、档案管理——说不清该找哪个环节时的第一入口 |
-| `01-opportunity-assessment` | 商机评估 | 项目打分、客户分级、定投入打法——"这单值不值得做、投多少" |
-| `02-decision-chain-mapping` | 决策链破译 | 组织架构、权力地图、关键人五维画像——"谁拍板、谁支持谁反对、从哪切入" |
-| `03-solution-design` | 解决方案设计 | 需求探挖、价值地图、方案汇报——"把方案对着客户高层 KPI 算账讲" |
-| `04-bid-standard-shaping` | 标准引导 | 评标标准攻防、参数引导——"标书定稿前的攻防布局" |
-| `05-trust-consolidation` | 信任巩固 | 签约前顾虑处理、临门一脚——"客户快签约时犹豫了怎么办" |
-| `06-account-management` | 客户经营 | 交付期经营、老客挖潜、定期体检——"交付之后怎么干出复购和转介绍" |
+| `00-key-account-dev` | 总控路由 (Gateway) | Problem diagnosis, stage positioning, context-package assembly, health-check retrospectives, profile management — the first entry point when you're not sure which stage skill to use |
+| `01-opportunity-assessment` | 商机评估 (Opportunity Assessment) | Project scoring, customer grading, and investment strategy — "Is this deal worth pursuing, and how much should we invest?" |
+| `02-decision-chain-mapping` | 决策链破译 (Decision-Chain Mapping) | Org structure, power maps, five-dimension profiles of key people — "Who makes the call, who supports or opposes, and where do we break in?" |
+| `03-solution-design` | 解决方案设计 (Solution Design) | Needs discovery, value mapping, solution presentations — "Pitch the solution against the customer's executive KPIs, in numbers" |
+| `04-bid-standard-shaping` | 标准引导 (Bid-Standard Shaping) | Offense and defense on bid-evaluation criteria, parameter steering — "The attack-and-defense layout before the bid document is finalized" |
+| `05-trust-consolidation` | 信任巩固 (Trust Consolidation) | Pre-signing objection handling and closing the deal — "What to do when the customer hesitates right before signing" |
+| `06-account-management` | 客户经营 (Account Management) | Delivery-phase account growth, mining existing customers, periodic health checks — "How to generate repurchases and referrals after delivery" |
 
-按场景找 skill（"你需要它当……"）：
+Find a skill by scenario ("when you need it as…"):
 
-- 你的客户组织很复杂、不知道谁拍板 → `02-decision-chain-mapping` 决策链破译
-- 手上好几个商机都说是重点、不知道先打哪个 → `01-opportunity-assessment` 商机评估（或先找 `00-key-account-dev` 判题）
-- 方案不错但客户嫌贵、下周要给一把手汇报 → `03-solution-design` 解决方案设计
-- 标书参数一看就是照着对手写的 → `04-bid-standard-shaping` 标准引导
-- 客户临门一脚犹豫了、拖延签约 → `05-trust-consolidation` 信任巩固
-- 项目交付了、想从老客户身上长出新业务 → `06-account-management` 客户经营
-- 这单丢了想复盘、或说不清问题属于哪一环节 → `00-key-account-dev` 总控路由
+- Your customer's organization is complex and you don't know who makes the call → `02-decision-chain-mapping` 决策链破译 (Decision-Chain Mapping)
+- Several opportunities are all labeled "top priority" and you don't know which to attack first → `01-opportunity-assessment` 商机评估 (Opportunity Assessment) (or start with `00-key-account-dev` for diagnosis)
+- The solution looks good but the customer says it's too expensive, and you present to the top executive next week → `03-solution-design` 解决方案设计 (Solution Design)
+- The bid's technical parameters are clearly written around a competitor → `04-bid-standard-shaping` 标准引导 (Bid-Standard Shaping)
+- The customer hesitates at the last mile and keeps delaying signing → `05-trust-consolidation` 信任巩固 (Trust Consolidation)
+- The project has been delivered and you want to grow new business from an existing customer → `06-account-management` 客户经营 (Account Management)
+- You lost the deal and want a retrospective, or you can't tell which stage the problem belongs to → `00-key-account-dev` 总控路由 (Gateway)
 
-## 快速上手（Quick Start）
+## Quick Start
 
-安装后直接用大白话向你的 agent 描述手上遇到的事即可，不需要记任何命令。以商机评估（`01-opportunity-assessment`）为例：
+After installation, just describe your situation to your agent in plain language — no commands to memorize. Take opportunity assessment (`01-opportunity-assessment`) as an example:
 
-**你说：**
+**You say:**
 
-> 听说 S 集团一个厂要改造产线，预算千把万，帮我评估下这单值不值得做。
+> I heard one of S Group's factories is planning a production-line upgrade with a budget of around ten million. Help me assess whether this deal is worth pursuing.
 
-**skill 会产出（要点）：**
+**The skill produces (key outputs):**
 
-- **评分结论**：客户价值分级（A/B/C/D 级）+ 项目综合评分，给出"项目推进／深入评估／暂缓／放弃"四选一立项建议；
-- **定位九宫格**：按"地盘 × 开局"落入九种策略之一，定出本单攻坚打法；
-- **策略建议**：分阶段作战计划与资源投入建议（POC 验证、高层拜访等），每条结论附依据与置信度。
+- **Scoring conclusion**: customer value grade (A/B/C/D) + composite project score, with a four-way go/no-go recommendation ("proceed / deep-dive assessment / hold / walk away");
+- **Nine-grid positioning**: maps "territory × opening position" into one of nine strategies to set the attack plan for this deal;
+- **Strategy recommendations**: a phased battle plan with resource-investment advice (POC validation, executive visits, etc.), with evidence and confidence attached to every conclusion.
 
-其他环节同理：带着"谁拍板""方案嫌贵""标书不利""签前犹豫""老客户挖潜"等真实问题开口即可，gateway（`00-key-account-dev`）会自动判题接力到对应 skill。
+The same applies to other stages: just start with real problems like "who makes the call", "the solution is seen as too expensive", "the bid parameters are against us", "hesitation before signing", or "mining an existing customer" — the gateway (`00-key-account-dev`) will automatically diagnose the problem and hand off to the right skill.
 
-## 目录结构
+## Directory Structure
 
-家族根目录（每个 skill 文件夹内含 `SKILL.md` + `reference/` 参考资料目录）：
+Family root (each skill folder contains a `SKILL.md` + a `reference/` directory):
 
 ```text
 key-account-dev-skills/
@@ -65,49 +67,49 @@ key-account-dev-skills/
 └── README.md
 ```
 
-## 兼容性与平台说明
+## Compatibility & Platform Notes
 
-本家族适用于支持 **Agent Skills 规范**（SKILL.md + YAML frontmatter）的 agent，例如 Claude Code、Kimi Code、Cursor 等；任何按该规范加载 skills 目录的 agent 均可使用。各 skill 对数据的需求走"声明需求 + 环境自行解析"协议，不绑定特定记忆或工具实现。
+This family works with any agent that supports the **Agent Skills specification** (SKILL.md + YAML frontmatter), such as Claude Code, Kimi Code, Cursor, etc.; any agent that loads a skills directory per that specification can use it. Each skill's data requirements follow a "declare requirements + let the environment resolve them" protocol, and do not bind to any specific memory or tool implementation.
 
-**注意**：`install.ps1` 一键脚本仅支持 **Windows（PowerShell）**；macOS / Linux 用户请手动复制 skill 文件夹到 agent 的 skills 目录，效果等同。
+**Note**: the `install.ps1` one-click script only supports **Windows (PowerShell)**; macOS / Linux users should manually copy the skill folders into their agent's skills directory — the result is equivalent.
 
-## 安装方式
+## Installation
 
-### 方式一：整个家族安装（推荐）
+### Option 1: Install the Whole Family (Recommended)
 
-把本目录下 7 个 skill 文件夹（`00-key-account-dev` ~ `06-account-management`）整体复制到你的 agent skills 目录。Windows 下可运行一键安装脚本（默认目标 `$HOME\.claude\skills`，可用 `-TargetDir` 指定其他目录）：
+Copy all 7 skill folders (`00-key-account-dev` ~ `06-account-management`) into your agent's skills directory. On Windows you can run the one-click install script (default target `$HOME\.claude\skills`; use `-TargetDir` to specify another directory):
 
 ```powershell
-# 在家族根目录执行
+# Run from the family root directory
 powershell -ExecutionPolicy Bypass -File .\install.ps1
 powershell -ExecutionPolicy Bypass -File .\install.ps1 -TargetDir "D:\your\skills\dir"
-powershell -ExecutionPolicy Bypass -File .\install.ps1 -Force   # 跳过覆盖确认
+powershell -ExecutionPolicy Bypass -File .\install.ps1 -Force   # Skip overwrite confirmation
 ```
 
-脚本安装前会先把家族根目录的共享协议母本 `10-家族共享协议.md` 同步到 `00-key-account-dev\reference\10-家族共享协议.md`（运行时副本，详见下文"家族共享协议"一节），再逐 skill 校验 frontmatter `name` 与文件夹名一致，并输出安装报告。
+Before installing, the script syncs the shared-protocol master copy `10-家族共享协议.md` from the family root to `00-key-account-dev\reference\10-家族共享协议.md` (the runtime copy; see the "Family Shared Protocol" section below), then validates each skill's frontmatter `name` against its folder name, and prints an installation report.
 
-手动安装亦可：直接复制 7 个文件夹到 skills 目录，保持文件夹名不变（frontmatter `name` 必须与文件夹名一致，含数字前缀）。
+Manual installation also works: simply copy the 7 folders into the skills directory, keeping folder names unchanged (the frontmatter `name` must match the folder name, including the numeric prefix).
 
-### 方式二：单 skill 独立安装
+### Option 2: Install a Single Skill Standalone
 
-任意一个 skill 文件夹都可单独复制到 skills 目录独立使用。每个 skill 自带内置兜底（降级链、档案模板、共享协议要点），单独安装时不依赖家族其他成员也能完成任务；专用 agent 环境下整族安装可获得免判题、免重问、自动接力等增益。
+Any single skill folder can be copied into the skills directory and used on its own. Each skill ships with built-in fallbacks (degradation chain, profile templates, shared-protocol key points), so it can complete its task without the rest of the family when installed alone; installing the whole family in a dedicated-agent environment gains extra benefits such as no manual diagnosis, no repeated questioning, and automatic handoffs.
 
-## 使用模式
+## Usage Modes
 
-- **Gateway 模式（整族安装）**：所有会话经 `00-key-account-dev` 判题后接力到对应阶段 skill。00 负责组装上下文包、防重复提问、跨会话缺口继承、收尾落档督办。适合长期、多客户、多商机的使用场景。
-- **独立模式（单 skill 安装）**：用户直接带着具体问题调用某个阶段 skill，该 skill 自行做环境自检、逐格采集、产出与落档。适合只关心某一环节的场景。
+- **Gateway mode (full-family install)**: every session is first diagnosed by `00-key-account-dev`, which then hands off to the appropriate stage skill. The 00 skill is responsible for assembling context packages, preventing repeated questions, inheriting gaps across sessions, and supervising closing/profile filing. Best for long-term, multi-customer, multi-opportunity usage.
+- **Standalone mode (single-skill install)**: the user invokes a stage skill directly with a specific problem, and that skill performs its own environment self-check, cell-by-cell data collection, output generation, and profile filing. Best when you only care about one stage.
 
-两种模式下，交互机械协议、输出规范、落档纪律、外部输入安全护栏等家族共享协议均默认生效。
+In both modes, the Family Shared Protocol — interaction mechanics, output specifications, profile-filing discipline, external-input safety guardrails, etc. — is in effect by default.
 
-## 家族共享协议
+## Family Shared Protocol (家族共享协议)
 
-7 个 skill 共同遵守的默认交互与输出协议定义在 `00-key-account-dev\reference\10-家族共享协议.md`（三条铁律、12 条交互机械协议、输出通用规范、落档纪律、数据供给降级链、外部输入安全、单轮提问上限）。各 SKILL.md 只写本环节特有的领域逻辑，共享规则单一事实源、不重复。
+The default interaction and output protocol shared by all 7 skills is defined in `00-key-account-dev\reference\10-家族共享协议.md` (three iron rules, 12 interaction-mechanics clauses, general output specifications, profile-filing discipline, data-provision degradation chain, external-input safety, single-round question cap). Each SKILL.md only writes the domain logic specific to its own stage; shared rules have a single source of truth and are not duplicated.
 
-**协议母本与同步**：共享协议的**母本**（canonical source）位于家族根目录 `10-家族共享协议.md`，家族所有 skill 的规则改动在此先行修改；`00-key-account-dev\reference\10-家族共享协议.md` 是随总控路由（00-key-account-dev）安装分发的运行时同步副本，由 install.ps1 在安装时自动从母本同步覆盖（安装报告会输出"协议同步：OK/FAIL"，FAIL 中止安装）。skill 内引用统一使用三级回退链：一级读家族根目录母本 → 二级读已安装环境的总控路由运行时副本 → 三级按各 skill 头部"独立模式内置兜底"块执行。手动整族复制安装（不走 install.ps1）的用户需自行保证两处一致，或单独运行 install.ps1 的同步逻辑后再复制。
+**Protocol master copy & sync**: the **master copy** (canonical source) of the shared protocol lives at the family root as `10-家族共享协议.md`; all rule changes for the family are made there first. `00-key-account-dev\reference\10-家族共享协议.md` is the runtime synced copy distributed with the gateway skill (`00-key-account-dev`), automatically overwritten from the master by install.ps1 at install time (the installation report prints "协议同步 (protocol sync): OK/FAIL"; FAIL aborts the installation). References inside skills use a unified three-level fallback chain: level 1 reads the family-root master copy → level 2 reads the installed gateway's runtime copy → level 3 executes the "standalone-mode built-in fallback" block at the head of each skill. Users who install the full family by manual copy (without install.ps1) must keep the two copies consistent themselves, or run install.ps1's sync logic alone before copying.
 
-## 版本
+## Versions
 
-| code_name | 版本 |
+| code_name | Version |
 | --- | --- |
 | `00-key-account-dev` | 1.2.0 |
 | `01-opportunity-assessment` | 1.1.0 |
@@ -117,12 +119,12 @@ powershell -ExecutionPolicy Bypass -File .\install.ps1 -Force   # 跳过覆盖�
 | `05-trust-consolidation` | 1.0.0 |
 | `06-account-management` | 1.1.0 |
 
-## 免责声明
+## Disclaimer
 
-本家族所有案例与示例中涉及的公司、集团与人名（如 A 公司、S 集团、张斌、李峰等）均为虚构，仅用于方法论演示与演练，不指向任何真实的企业、组织或个人；如有雷同，纯属巧合。
+All companies, groups, and personal names in the family's cases and examples (such as Company A, S Group, Zhang Bin, Li Feng, etc.) are fictional, used only for methodology demonstration and practice; they do not refer to any real enterprise, organization, or individual. Any resemblance is purely coincidental.
 
-## License 与署名
+## License & Credits
 
-- License：MIT（见根目录 LICENSE 文件；各 skill frontmatter 已同步声明）
-- 作者：tomoshaw
-- 来源：大客户开发 skill 家族
+- License: MIT (see the LICENSE file in the root; also declared in each skill's frontmatter)
+- Author: tomoshaw
+- Source: Key Account Development Skill Family (大客户开发 skill 家族)

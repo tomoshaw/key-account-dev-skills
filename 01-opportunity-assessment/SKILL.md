@@ -1,6 +1,6 @@
 ---
 name: 01-opportunity-assessment
-description: 商机评估——判断一个新项目值不值得做、怎么打、投多少。触发分支：① 单个商机要不要投入（"这个商机值不值得做""下周截标，这单投不投"）；② 手上多个商机要排优先级、分资源（"几个项目先打哪个"）；③ 带新人用方法论案例演练商机评估。不属商机评估的问题，移交家族对应环节 skill 处理。
+description: Opportunity assessment — scores deals and customers to decide whether and how much to invest. Trigger — judging one deal's worth or prioritizing several. 商机评估——判断一个新项目值不值得做、怎么打、投多少。触发分支：① 单个商机要不要投入（"这个商机值不值得做""下周截标，这单投不投"）；② 手上多个商机要排优先级、分资源（"几个项目先打哪个"）；③ 带新人用方法论案例演练商机评估。不属商机评估的问题，移交家族对应环节 skill 处理。
 type: interactive
 license: MIT
 metadata:
@@ -9,10 +9,10 @@ version: 1.1.0
 author: tomoshaw
 source: 大客户开发 skill 家族
 scenarios:
-* "听说 S 集团一个厂要改造产线，预算千把万，你帮我评估下这单值不值得做、客户预算够不够"
-* "手上五个商机都说是重点，你帮我理理先打哪个、资源怎么分"
-* "让新来的小王用方法论里的案例练一下商机评估"
-***
+ - "听说 S 集团一个厂要改造产线，预算千把万，你帮我评估下这单值不值得做、客户预算够不够"
+ - "手上五个商机都说是重点，你帮我理理先打哪个、资源怎么分"
+ - "让新来的小王用方法论里的案例练一下商机评估"
+---
 # 商机评估（01-opportunity-assessment）
 
 > 家族定位：核心三件套之一（商机评估（01-opportunity-assessment）/ 决策链破译（02-decision-chain-mapping）/ 解决方案设计（03-solution-design）），家族最底层 skill，无上游依赖。回答一个问题：**这个项目值不值得做、怎么打、投多少。**

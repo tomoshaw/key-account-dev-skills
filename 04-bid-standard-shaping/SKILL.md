@@ -1,6 +1,6 @@
 ---
 name: 04-bid-standard-shaping
-description: 标准引导——招标前的攻防布局，回答两类问题：①标书参数照着对手写的，怎么改标准（评标权重、杀手/沉睡指标）；②客户还没定标准，怎么引导一个对我方有利的。消费商机评估的定位结论与决策链破译五维地图的标准话语权。
+description: Bid-standard shaping — shapes tender evaluation criteria in your favor before the tender is finalized. Trigger — specs tailored to a rival, or guiding an undecided customer. 标准引导——招标前的攻防布局，回答两类问题：①标书参数照着对手写的，怎么改标准（评标权重、杀手/沉睡指标）；②客户还没定标准，怎么引导一个对我方有利的。消费商机评估的定位结论与决策链破译五维地图的标准话语权。
 type: interactive
 license: MIT
 metadata:

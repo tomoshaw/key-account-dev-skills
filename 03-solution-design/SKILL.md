@@ -1,6 +1,6 @@
 ---
 name: 03-solution-design
-description: 解决方案设计：把方案从参数对比拉到对着客户高层 KPI 算账。当用户问"方案不错但客户嫌贵""对手低价客户动摇""下周给一把手汇报方案"时使用；决策链破译（02-decision-chain-mapping）完成后也可由 00-key-account-dev 接力激活。
+description: Solution design — ties the proposal to customer executives' KPIs instead of price/spec comparisons. Trigger — value pushback, a rival's low bid, or a top-level briefing. 解决方案设计：把方案从参数对比拉到对着客户高层 KPI 算账。当用户问"方案不错但客户嫌贵""对手低价客户动摇""下周给一把手汇报方案"时使用；决策链破译（02-decision-chain-mapping）完成后也可由 00-key-account-dev 接力激活。
 type: interactive
 license: MIT
 metadata:

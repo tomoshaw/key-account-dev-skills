@@ -1,6 +1,6 @@
 ---
 name: 05-trust-consolidation
-description: 信任巩固（判题＋顾虑化解）——回答"客户临门一脚犹豫了怎么办"：客户已基本选定供应商但签约受阻时的顾虑归因与攻防。两个触发分支：①签前犹豫——拖延签约、签前提新要求、躲避销售、疑似接触竞品；②最后一刻被翻盘——客户倾向转向竞品、出现废标重招迹象。流程：先按疑虑三问归因，再复用商机评估（01-opportunity-assessment）画布领先/落后定位（只引用不重判）分岔——领先做大项目需求澄清会＋项目执行预案（中标后 24 小时内邀约、一周内召开）＋转移成本盘点，小项目用"三正确"解除顾虑；落后先定 ABCD 局势（实践口径策略方法论空白，强制用户确认），再从业务与组织两层面制造扩大疑虑（组织层面消费决策链破译（02-decision-chain-mapping）五维地图）。
+description: Trust consolidation — untangles last-minute hesitation before signing and counters late flip-overs to rivals. Trigger — stalled signing, new last-minute demands, dodged calls, or suspected competitor contact. 信任巩固（判题＋顾虑化解）——回答"客户临门一脚犹豫了怎么办"：客户已基本选定供应商但签约受阻时的顾虑归因与攻防。两个触发分支：①签前犹豫——拖延签约、签前提新要求、躲避销售、疑似接触竞品；②最后一刻被翻盘——客户倾向转向竞品、出现废标重招迹象。流程：先按疑虑三问归因，再复用商机评估（01-opportunity-assessment）画布领先/落后定位（只引用不重判）分岔——领先做大项目需求澄清会＋项目执行预案（中标后 24 小时内邀约、一周内召开）＋转移成本盘点，小项目用"三正确"解除顾虑；落后先定 ABCD 局势（实践口径策略方法论空白，强制用户确认），再从业务与组织两层面制造扩大疑虑（组织层面消费决策链破译（02-decision-chain-mapping）五维地图）。
 type: interactive
 scenarios:
  - "客户说再考虑考虑，一周没动静了，这单是不是要飞了"
