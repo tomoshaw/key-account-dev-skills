@@ -3,7 +3,7 @@
   大客户开发 skill 家族一键安装脚本。
 
 .DESCRIPTION
-  把家族 7 个 skill 文件夹（00-key-account-dev ~ 06-kehujingying）复制到指定的 agent skills 目录。
+  把家族 7 个 skill 文件夹（00-key-account-dev ~ 06-account-management）复制到指定的 agent skills 目录。
   - 安装前先把家族根目录 10-家族共享协议.md（母本）同步到 00-key-account-dev\reference\10-家族共享协议.md
     （运行时副本，剥离母本顶部"文件定位"块、保留副本自身定位块），同步失败中止安装；
   - 逐 skill 校验 frontmatter name 与文件夹名一致，输出安装报告；
@@ -30,12 +30,12 @@ $sourceRoot = $PSScriptRoot
 $familyName = "大客户开发 skill 家族"
 $skills = @(
     "00-key-account-dev",
-    "01-shangji-pinggu",
-    "02-juece-poyi",
-    "03-jiejue-fangan",
-    "04-biaozhun-yindao",
-    "05-xinren-gonggu",
-    "06-kehujingying"
+    "01-opportunity-assessment",
+    "02-decision-chain-mapping",
+    "03-solution-design",
+    "04-bid-standard-shaping",
+    "05-trust-consolidation",
+    "06-account-management"
 )
 
 Write-Host "== $familyName 安装 ==" -ForegroundColor Cyan

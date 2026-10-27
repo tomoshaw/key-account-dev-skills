@@ -1,6 +1,6 @@
 ---
-name: 03-jiejue-fangan
-description: 解决方案设计：把方案从参数对比拉到对着客户高层 KPI 算账。当用户问"方案不错但客户嫌贵""对手低价客户动摇""下周给一把手汇报方案"时使用；决策链破译（02-juece-poyi）完成后也可由 00-key-account-dev 接力激活。
+name: 03-solution-design
+description: 解决方案设计：把方案从参数对比拉到对着客户高层 KPI 算账。当用户问"方案不错但客户嫌贵""对手低价客户动摇""下周给一把手汇报方案"时使用；决策链破译（02-decision-chain-mapping）完成后也可由 00-key-account-dev 接力激活。
 type: interactive
 license: MIT
 metadata:
@@ -13,7 +13,7 @@ scenarios:
  - "我们方案技术不差但讲不透价值，怎么把方案和客户 KPI 绑起来"
 ---
 
-# 03-jiejue-fangan · 解决方案设计（阶段三，核心三件套）
+# 03-solution-design · 解决方案设计（阶段三，核心三件套）
 
 > **一句话价值主张**：把方案从参数对比拉到对着客户高层 KPI 算账——让一把手听懂"你能帮我把哪个 KPI 做到多少"。
 

@@ -13,26 +13,26 @@
 | code_name | 环节名 | 一句话定位 |
 | --- | --- | --- |
 | `00-key-account-dev` | 总控路由（Gateway） | 判题、阶段定位、上下文包组装、体检复盘、档案管理——说不清该找哪个环节时的第一入口 |
-| `01-shangji-pinggu` | 商机评估 | 项目打分、客户分级、定投入打法——"这单值不值得做、投多少" |
-| `02-juece-poyi` | 决策链破译 | 组织架构、权力地图、关键人五维画像——"谁拍板、谁支持谁反对、从哪切入" |
-| `03-jiejue-fangan` | 解决方案设计 | 需求探挖、价值地图、方案汇报——"把方案对着客户高层 KPI 算账讲" |
-| `04-biaozhun-yindao` | 标准引导 | 评标标准攻防、参数引导——"标书定稿前的攻防布局" |
-| `05-xinren-gonggu` | 信任巩固 | 签约前顾虑处理、临门一脚——"客户快签约时犹豫了怎么办" |
-| `06-kehujingying` | 客户经营 | 交付期经营、老客挖潜、定期体检——"交付之后怎么干出复购和转介绍" |
+| `01-opportunity-assessment` | 商机评估 | 项目打分、客户分级、定投入打法——"这单值不值得做、投多少" |
+| `02-decision-chain-mapping` | 决策链破译 | 组织架构、权力地图、关键人五维画像——"谁拍板、谁支持谁反对、从哪切入" |
+| `03-solution-design` | 解决方案设计 | 需求探挖、价值地图、方案汇报——"把方案对着客户高层 KPI 算账讲" |
+| `04-bid-standard-shaping` | 标准引导 | 评标标准攻防、参数引导——"标书定稿前的攻防布局" |
+| `05-trust-consolidation` | 信任巩固 | 签约前顾虑处理、临门一脚——"客户快签约时犹豫了怎么办" |
+| `06-account-management` | 客户经营 | 交付期经营、老客挖潜、定期体检——"交付之后怎么干出复购和转介绍" |
 
 按场景找 skill（"你需要它当……"）：
 
-- 你的客户组织很复杂、不知道谁拍板 → `02-juece-poyi` 决策链破译
-- 手上好几个商机都说是重点、不知道先打哪个 → `01-shangji-pinggu` 商机评估（或先找 `00-key-account-dev` 判题）
-- 方案不错但客户嫌贵、下周要给一把手汇报 → `03-jiejue-fangan` 解决方案设计
-- 标书参数一看就是照着对手写的 → `04-biaozhun-yindao` 标准引导
-- 客户临门一脚犹豫了、拖延签约 → `05-xinren-gonggu` 信任巩固
-- 项目交付了、想从老客户身上长出新业务 → `06-kehujingying` 客户经营
+- 你的客户组织很复杂、不知道谁拍板 → `02-decision-chain-mapping` 决策链破译
+- 手上好几个商机都说是重点、不知道先打哪个 → `01-opportunity-assessment` 商机评估（或先找 `00-key-account-dev` 判题）
+- 方案不错但客户嫌贵、下周要给一把手汇报 → `03-solution-design` 解决方案设计
+- 标书参数一看就是照着对手写的 → `04-bid-standard-shaping` 标准引导
+- 客户临门一脚犹豫了、拖延签约 → `05-trust-consolidation` 信任巩固
+- 项目交付了、想从老客户身上长出新业务 → `06-account-management` 客户经营
 - 这单丢了想复盘、或说不清问题属于哪一环节 → `00-key-account-dev` 总控路由
 
 ## 快速上手（Quick Start）
 
-安装后直接用大白话向你的 agent 描述手上遇到的事即可，不需要记任何命令。以商机评估（`01-shangji-pinggu`）为例：
+安装后直接用大白话向你的 agent 描述手上遇到的事即可，不需要记任何命令。以商机评估（`01-opportunity-assessment`）为例：
 
 **你说：**
 
@@ -53,12 +53,12 @@
 ```text
 key-account-dev-skills/
 ├── 00-key-account-dev/       # 总控路由（Gateway）
-├── 01-shangji-pinggu/        # 商机评估
-├── 02-juece-poyi/            # 决策链破译
-├── 03-jiejue-fangan/         # 解决方案设计
-├── 04-biaozhun-yindao/       # 标准引导
-├── 05-xinren-gonggu/         # 信任巩固
-├── 06-kehujingying/          # 客户经营
+├── 01-opportunity-assessment/        # 商机评估
+├── 02-decision-chain-mapping/            # 决策链破译
+├── 03-solution-design/         # 解决方案设计
+├── 04-bid-standard-shaping/       # 标准引导
+├── 05-trust-consolidation/         # 信任巩固
+├── 06-account-management/          # 客户经营
 ├── 10-家族共享协议.md         # 家族共享协议母本
 ├── install.ps1               # Windows 一键安装脚本
 ├── LICENSE                   # MIT
@@ -75,7 +75,7 @@ key-account-dev-skills/
 
 ### 方式一：整个家族安装（推荐）
 
-把本目录下 7 个 skill 文件夹（`00-key-account-dev` ~ `06-kehujingying`）整体复制到你的 agent skills 目录。Windows 下可运行一键安装脚本（默认目标 `$HOME\.claude\skills`，可用 `-TargetDir` 指定其他目录）：
+把本目录下 7 个 skill 文件夹（`00-key-account-dev` ~ `06-account-management`）整体复制到你的 agent skills 目录。Windows 下可运行一键安装脚本（默认目标 `$HOME\.claude\skills`，可用 `-TargetDir` 指定其他目录）：
 
 ```powershell
 # 在家族根目录执行
@@ -110,12 +110,12 @@ powershell -ExecutionPolicy Bypass -File .\install.ps1 -Force   # 跳过覆盖�
 | code_name | 版本 |
 | --- | --- |
 | `00-key-account-dev` | 1.2.0 |
-| `01-shangji-pinggu` | 1.1.0 |
-| `02-juece-poyi` | 1.0.0 |
-| `03-jiejue-fangan` | 1.1.0 |
-| `04-biaozhun-yindao` | 1.0.0 |
-| `05-xinren-gonggu` | 1.0.0 |
-| `06-kehujingying` | 1.1.0 |
+| `01-opportunity-assessment` | 1.1.0 |
+| `02-decision-chain-mapping` | 1.0.0 |
+| `03-solution-design` | 1.1.0 |
+| `04-bid-standard-shaping` | 1.0.0 |
+| `05-trust-consolidation` | 1.0.0 |
+| `06-account-management` | 1.1.0 |
 
 ## 免责声明
 
