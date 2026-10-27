@@ -4,33 +4,31 @@
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-A family of agent skills for key-account (B2B complex) sales: from the moment an opportunity comes in through post-delivery account growth, it covers six stages — **商机评估 (Opportunity Assessment) → 决策链破译 (Decision-Chain Mapping) → 解决方案设计 (Solution Design) → 标准引导 (Bid-Standard Shaping) → 信任巩固 (Trust Consolidation) → 客户经营 (Account Management)** — plus a Gateway skill that handles problem diagnosis, orchestration, and review/retrospective. The family emphasizes "tool-and-table driven workflows + inferential data collection + every conclusion explained in plain language", making the sales process reviewable and replicable.
+A family of agent skills for key-account (B2B complex) sales: from the moment an opportunity comes in through post-delivery account growth, it covers six stages — **Opportunity Assessment → Decision-Chain Mapping → Solution Design → Bid-Standard Shaping → Trust Consolidation → Account Management** — plus a Gateway skill that handles problem diagnosis, orchestration, and review/retrospective. The family emphasizes "tool-and-table driven workflows + inferential data collection + every conclusion explained in plain language", making the sales process reviewable and replicable.
 
-> **English summary**
->
 > A family of 7 Agent Skills for B2B enterprise / key-account (complex) sales, covering the full pipeline from opportunity qualification to post-delivery account growth: opportunity assessment, decision-chain mapping, solution design, bid-standard shaping, trust consolidation, and account management — plus a gateway skill that routes, orchestrates, and reviews the whole process. Each skill is a self-contained folder (SKILL.md with YAML frontmatter + a reference/ directory), installed by copying into your agent's skills directory. Open source under the MIT License.
 
 ## Family Members (7 Skills)
 
 | code_name | Stage | One-line positioning |
 | --- | --- | --- |
-| `00-key-account-dev` | 总控路由 (Gateway) | Problem diagnosis, stage positioning, context-package assembly, health-check retrospectives, profile management — the first entry point when you're not sure which stage skill to use |
-| `01-opportunity-assessment` | 商机评估 (Opportunity Assessment) | Project scoring, customer grading, and investment strategy — "Is this deal worth pursuing, and how much should we invest?" |
-| `02-decision-chain-mapping` | 决策链破译 (Decision-Chain Mapping) | Org structure, power maps, five-dimension profiles of key people — "Who makes the call, who supports or opposes, and where do we break in?" |
-| `03-solution-design` | 解决方案设计 (Solution Design) | Needs discovery, value mapping, solution presentations — "Pitch the solution against the customer's executive KPIs, in numbers" |
-| `04-bid-standard-shaping` | 标准引导 (Bid-Standard Shaping) | Offense and defense on bid-evaluation criteria, parameter steering — "The attack-and-defense layout before the bid document is finalized" |
-| `05-trust-consolidation` | 信任巩固 (Trust Consolidation) | Pre-signing objection handling and closing the deal — "What to do when the customer hesitates right before signing" |
-| `06-account-management` | 客户经营 (Account Management) | Delivery-phase account growth, mining existing customers, periodic health checks — "How to generate repurchases and referrals after delivery" |
+| `00-key-account-dev` | Gateway | Problem diagnosis, stage positioning, context-package assembly, health-check retrospectives, profile management — the first entry point when you're not sure which stage skill to use |
+| `01-opportunity-assessment` | Opportunity Assessment | Project scoring, customer grading, and investment strategy — "Is this deal worth pursuing, and how much should we invest?" |
+| `02-decision-chain-mapping` | Decision-Chain Mapping | Org structure, power maps, five-dimension profiles of key people — "Who makes the call, who supports or opposes, and where do we break in?" |
+| `03-solution-design` | Solution Design | Needs discovery, value mapping, solution presentations — "Pitch the solution against the customer's executive KPIs, in numbers" |
+| `04-bid-standard-shaping` | Bid-Standard Shaping | Offense and defense on bid-evaluation criteria, parameter steering — "The attack-and-defense layout before the bid document is finalized" |
+| `05-trust-consolidation` | Trust Consolidation | Pre-signing objection handling and closing the deal — "What to do when the customer hesitates right before signing" |
+| `06-account-management` | Account Management | Delivery-phase account growth, mining existing customers, periodic health checks — "How to generate repurchases and referrals after delivery" |
 
 Find a skill by scenario ("when you need it as…"):
 
-- Your customer's organization is complex and you don't know who makes the call → `02-decision-chain-mapping` 决策链破译 (Decision-Chain Mapping)
-- Several opportunities are all labeled "top priority" and you don't know which to attack first → `01-opportunity-assessment` 商机评估 (Opportunity Assessment) (or start with `00-key-account-dev` for diagnosis)
-- The solution looks good but the customer says it's too expensive, and you present to the top executive next week → `03-solution-design` 解决方案设计 (Solution Design)
-- The bid's technical parameters are clearly written around a competitor → `04-bid-standard-shaping` 标准引导 (Bid-Standard Shaping)
-- The customer hesitates at the last mile and keeps delaying signing → `05-trust-consolidation` 信任巩固 (Trust Consolidation)
-- The project has been delivered and you want to grow new business from an existing customer → `06-account-management` 客户经营 (Account Management)
-- You lost the deal and want a retrospective, or you can't tell which stage the problem belongs to → `00-key-account-dev` 总控路由 (Gateway)
+- Your customer's organization is complex and you don't know who makes the call → `02-decision-chain-mapping`
+- Several opportunities are all labeled "top priority" and you don't know which to attack first → `01-opportunity-assessment` (or start with `00-key-account-dev` for diagnosis)
+- The solution looks good but the customer says it's too expensive, and you present to the top executive next week → `03-solution-design`
+- The bid's technical parameters are clearly written around a competitor → `04-bid-standard-shaping`
+- The customer hesitates at the last mile and keeps delaying signing → `05-trust-consolidation`
+- The project has been delivered and you want to grow new business from an existing customer → `06-account-management`
+- You lost the deal and want a retrospective, or you can't tell which stage the problem belongs to → `00-key-account-dev`
 
 ## Quick Start
 
@@ -54,16 +52,16 @@ Family root (each skill folder contains a `SKILL.md` + a `reference/` directory)
 
 ```text
 key-account-dev-skills/
-├── 00-key-account-dev/       # 总控路由（Gateway）
-├── 01-opportunity-assessment/        # 商机评估
-├── 02-decision-chain-mapping/            # 决策链破译
-├── 03-solution-design/         # 解决方案设计
-├── 04-bid-standard-shaping/       # 标准引导
-├── 05-trust-consolidation/         # 信任巩固
-├── 06-account-management/          # 客户经营
-├── 10-家族共享协议.md         # 家族共享协议母本
-├── install.ps1               # Windows 一键安装脚本
-├── LICENSE                   # MIT
+├── 00-key-account-dev/            # Gateway
+├── 01-opportunity-assessment/     # Opportunity assessment
+├── 02-decision-chain-mapping/     # Decision-chain mapping
+├── 03-solution-design/            # Solution design
+├── 04-bid-standard-shaping/       # Bid-standard shaping
+├── 05-trust-consolidation/        # Trust consolidation
+├── 06-account-management/         # Account management
+├── 10-家族共享协议.md              # Shared-protocol master copy
+├── install.ps1                    # Windows one-click install script
+├── LICENSE                        # MIT
 └── README.md
 ```
 
@@ -86,7 +84,7 @@ powershell -ExecutionPolicy Bypass -File .\install.ps1 -TargetDir "D:\your\skill
 powershell -ExecutionPolicy Bypass -File .\install.ps1 -Force   # Skip overwrite confirmation
 ```
 
-Before installing, the script syncs the shared-protocol master copy `10-家族共享协议.md` from the family root to `00-key-account-dev\reference\10-家族共享协议.md` (the runtime copy; see the "Family Shared Protocol" section below), then validates each skill's frontmatter `name` against its folder name, and prints an installation report.
+Before installing, the script syncs the shared-protocol master copy (`10-家族共享协议.md`) from the family root to `00-key-account-dev\reference\10-家族共享协议.md` (the runtime copy; see the "Family Shared Protocol" section below), then validates each skill's frontmatter `name` against its folder name, and prints an installation report.
 
 Manual installation also works: simply copy the 7 folders into the skills directory, keeping folder names unchanged (the frontmatter `name` must match the folder name, including the numeric prefix).
 
@@ -101,11 +99,11 @@ Any single skill folder can be copied into the skills directory and used on its 
 
 In both modes, the Family Shared Protocol — interaction mechanics, output specifications, profile-filing discipline, external-input safety guardrails, etc. — is in effect by default.
 
-## Family Shared Protocol (家族共享协议)
+## Family Shared Protocol
 
 The default interaction and output protocol shared by all 7 skills is defined in `00-key-account-dev\reference\10-家族共享协议.md` (three iron rules, 12 interaction-mechanics clauses, general output specifications, profile-filing discipline, data-provision degradation chain, external-input safety, single-round question cap). Each SKILL.md only writes the domain logic specific to its own stage; shared rules have a single source of truth and are not duplicated.
 
-**Protocol master copy & sync**: the **master copy** (canonical source) of the shared protocol lives at the family root as `10-家族共享协议.md`; all rule changes for the family are made there first. `00-key-account-dev\reference\10-家族共享协议.md` is the runtime synced copy distributed with the gateway skill (`00-key-account-dev`), automatically overwritten from the master by install.ps1 at install time (the installation report prints "协议同步 (protocol sync): OK/FAIL"; FAIL aborts the installation). References inside skills use a unified three-level fallback chain: level 1 reads the family-root master copy → level 2 reads the installed gateway's runtime copy → level 3 executes the "standalone-mode built-in fallback" block at the head of each skill. Users who install the full family by manual copy (without install.ps1) must keep the two copies consistent themselves, or run install.ps1's sync logic alone before copying.
+**Protocol master copy & sync**: the **master copy** (canonical source) of the shared protocol lives at the family root as `10-家族共享协议.md`; all rule changes for the family are made there first. `00-key-account-dev\reference\10-家族共享协议.md` is the runtime synced copy distributed with the gateway skill (`00-key-account-dev`), automatically overwritten from the master by install.ps1 at install time (the installation report prints a "protocol sync: OK/FAIL" line; FAIL aborts the installation). References inside skills use a unified three-level fallback chain: level 1 reads the family-root master copy → level 2 reads the installed gateway's runtime copy → level 3 executes the "standalone-mode built-in fallback" block at the head of each skill. Users who install the full family by manual copy (without install.ps1) must keep the two copies consistent themselves, or run install.ps1's sync logic alone before copying.
 
 ## Versions
 
@@ -127,4 +125,4 @@ All companies, groups, and personal names in the family's cases and examples (su
 
 - License: MIT (see the LICENSE file in the root; also declared in each skill's frontmatter)
 - Author: tomoshaw
-- Source: Key Account Development Skill Family (大客户开发 skill 家族)
+- Source: Key Account Development Skill Family
