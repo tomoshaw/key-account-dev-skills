@@ -124,5 +124,5 @@ powershell -ExecutionPolicy Bypass -File .\install.ps1 -Force   # 跳过覆盖�
 ## License 与署名
 
 - License：MIT（见根目录 LICENSE 文件；各 skill frontmatter 已同步声明）
-- 作者：大客户开发 skill 家族维护组
+- 作者：tomoshaw
 - 来源：大客户开发 skill 家族

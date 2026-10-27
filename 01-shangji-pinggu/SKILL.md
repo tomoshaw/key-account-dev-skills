@@ -6,7 +6,7 @@ license: MIT
 metadata:
 family: 大客户开发skill家族
 version: 1.1.0
-author: 大客户开发skill家族维护者
+author: tomoshaw
 source: 大客户开发 skill 家族
 scenarios:
 * "听说 S 集团一个厂要改造产线，预算千把万，你帮我评估下这单值不值得做、客户预算够不够"

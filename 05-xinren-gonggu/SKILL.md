@@ -9,7 +9,7 @@ scenarios:
 version: 1.0.0
 license: MIT
 metadata:
-  author: 大客户开发skill家族维护者
+  author: tomoshaw
   category: ka-sales
 ---
 # 05 · 05-xinren-gonggu 信任巩固（阶段五：签约前的顾虑化解与攻防）

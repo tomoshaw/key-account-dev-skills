@@ -9,7 +9,7 @@ license: MIT
 metadata:
  version: "1.2.0"
  family: key-account-dev
- author: 大客户开发 skill 家族维护组
+ author: tomoshaw
 type: workflow
 scenarios:
  - "我手上好几个商机都说是重点，你帮我理理先打哪个、下一步该干什么"

@@ -4,7 +4,7 @@ description: 标准引导——招标前的攻防布局，回答两类问题：�
 type: interactive
 license: MIT
 metadata:
-  author: 大客户开发skill家族项目组
+  author: tomoshaw
   version: 1.0.0
   category: key-account-dev
 scenarios:

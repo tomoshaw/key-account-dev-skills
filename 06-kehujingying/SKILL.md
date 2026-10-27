@@ -13,7 +13,7 @@ version: 1.1.0
 license: MIT
 metadata:
   family: key-account-dev
-  author: 大客户开发 skill 家族
+  author: tomoshaw
   source: 大客户开发 skill 家族
 ---
 

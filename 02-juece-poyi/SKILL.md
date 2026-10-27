@@ -13,7 +13,7 @@ scenarios:
 metadata:
   version: 1.0.0
   family: 大客户开发 skill 家族（00-key-account-dev）
-  author: 大客户开发skill家族维护者
+  author: tomoshaw
   source: 大客户开发培训项目
 license: MIT
 ---

@@ -5,7 +5,7 @@ type: interactive
 license: MIT
 metadata:
   version: 1.1.0
-  author: 大客户开发 skill 家族
+  author: tomoshaw
   source: 大客户开发skill家族
 scenarios:
  - "客户总觉得我们方案贵，下周要给一把手汇报，你帮我理理这方案怎么讲才有说服力"
